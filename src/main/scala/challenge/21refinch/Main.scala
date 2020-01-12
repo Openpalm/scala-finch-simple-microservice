@@ -17,7 +17,7 @@ object Main extends App {
 
     type lookupTable[A] = List[(Int, (Int, A))]
 
-    val url = "http://localhost:8080"
+    val url = "http://localhost:8000"
 
     def getDataFromUrl (url: String): String = scala.io.Source.fromURL(url).mkString
     def getData: List[Char] = getDataFromUrl(url).replaceAll("\n", "").toList
