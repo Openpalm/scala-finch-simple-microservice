@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/gog/playground/workdocs/21re-finch/src/main/scala/challenge/21refinch/Main.scala:12:14: object annotations is not a member of package scala[0m
+[0m[[0m[31merror[0m] [0m[0mimport scala.annotations.tailrec[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/gog/playground/workdocs/21re-finch/src/main/scala/challenge/21refinch/Main.scala:26:6: not found: type tailrec[0m
+[0m[[0m[31merror[0m] [0m[0m    @tailrec[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

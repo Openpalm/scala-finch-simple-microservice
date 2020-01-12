@@ -1,0 +1,27 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/21re-finch_2.12-0.0.1-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch/Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch/Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch/Main$Message.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch/Main$Message.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch/Main$anon$importedEncoder$macro$7$1$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch/Main$anon$importedEncoder$macro$7$1$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch/Main$Message$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch/Main$Message$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch/Main$anon$importedEncoder$macro$7$1$anon$macro$5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch/Main$anon$importedEncoder$macro$7$1$anon$macro$5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch/Main$anon$importedEncoder$macro$7$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch/Main$anon$importedEncoder$macro$7$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch/Main$anon$importedEncoder$macro$7$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch/Main$anon$importedEncoder$macro$7$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	challenge/finch/Main$util$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/gog/playground/workdocs/21re-finch/target/scala-2.12/classes/challenge/finch/Main$util$.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
