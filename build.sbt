@@ -10,18 +10,21 @@ lazy val root = (project in file("."))
     scalaVersion := "2.12.7",
     libraryDependencies ++= Seq(
       //the server
-      "com.github.finagle" %% "finchx-core"  % finchVersion,
-      "com.github.finagle" %% "finchx-circe"  % finchVersion,
+      "com.github.finagle" %% "finchx-core" % finchVersion,
+      "com.github.finagle" %% "finchx-circe" % finchVersion,
       "io.circe" %% "circe-generic" % circeVersion,
-      //lihao console's 
+      //cache
+      "com.github.cb372" %% "scalacache-caffeine" % "0.28.0",
+      //
+      //lihao console's
       "com.lihaoyi" % "ammonite" % "1.6.9-19-827dffe" % "test" cross CrossVersion.full,
       //testing once im done
-      "org.scalatest"      %% "scalatest"    % scalatestVersion % "test"
+      "org.scalatest" %% "scalatest" % scalatestVersion % "test"
     )
   )
 
-  //for REPL dev
-  sourceGenerators in Test += Def.task {
+//for REPL dev
+sourceGenerators in Test += Def.task {
   val file = (sourceManaged in Test).value / "amm.scala"
   IO.write(file, """object amm extends App { ammonite.Main.main(args) }""")
   Seq(file)

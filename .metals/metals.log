@@ -4,3 +4,279 @@ Jan 13, 2020 12:06:52 AM org.xnio.Xnio <clinit>
 INFO: XNIO version 3.6.5.Final
 Jan 13, 2020 12:06:52 AM org.xnio.nio.NioXnio <clinit>
 INFO: XNIO NIO Implementation Version 3.6.5.Final
+INFO  time: initialize in 2.36s
+INFO  skipping build import with status 'Requested'
+INFO  Selected port 5032
+Jan 13, 2020 1:00:54 AM org.xnio.Xnio <clinit>
+INFO: XNIO version 3.6.5.Final
+Jan 13, 2020 1:00:54 AM org.xnio.nio.NioXnio <clinit>
+INFO: XNIO NIO Implementation Version 3.6.5.Final
+Jan 13, 2020 1:00:54 AM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 2.3.0.Beta2
+INFO  Started Metals http server at http://127.0.0.1:5032
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+INFO  time: initialize in 2.61s
+INFO  skipping build import with status 'Requested'
+INFO  Selected port 5031
+Jan 13, 2020 1:13:55 AM org.xnio.Xnio <clinit>
+INFO: XNIO version 3.6.5.Final
+Jan 13, 2020 1:13:55 AM org.xnio.nio.NioXnio <clinit>
+INFO: XNIO NIO Implementation Version 3.6.5.Final
+Jan 13, 2020 1:13:55 AM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 2.3.0.Beta2
+INFO  Started Metals http server at http://127.0.0.1:5031
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/build.sbt
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/build.sbt
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/build.sbt
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/build.sbt
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/build.sbt
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/build.sbt
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+Jan 13, 2020 4:55:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/globals.scala",
+      "languageId": "scala",
+      "version": 1,
+      "text": "package challenge\n"
+    }
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/globals.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:373)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:424)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3280)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.didOpen(MetalsLanguageServer.scala:599)
+	... 16 more
+
+Jan 13, 2020 4:55:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.nio.file.NoSuchFileException: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/globals.scala
+java.util.concurrent.CompletionException: java.nio.file.NoSuchFileException: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/globals.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2159)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.nio.file.NoSuchFileException: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/globals.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:373)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:424)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3280)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionAbsolutePathMetals.toInput(MtagsEnrichments.scala:112)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.toInputFromBuffers(MetalsEnrichments.scala:283)
+	at scala.meta.internal.metals.Trees.$anonfun$parse$1(Trees.scala:47)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.Trees.parse(Trees.scala:46)
+	at scala.meta.internal.metals.Trees.$anonfun$get$1(Trees.scala:22)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.Trees.get(Trees.scala:22)
+	at scala.meta.internal.metals.FoldingRangeProvider.getRangedFor(FoldingRangeProvider.scala:19)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$1(MetalsLanguageServer.scala:1005)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/globals.scala
+Jan 13, 2020 4:59:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala",
+      "languageId": "scala",
+      "version": 1,
+      "text": "  object util {\n    import scala.util.{Try, Success, Failure}\n    import globals.remote\n\n    type lookupTable[A] \u003d List[(Int, (Int, A))]\n\n    def getDataFromUrl(url: String): Try[String] \u003d Try {\n      scala.io.Source.fromURL(url).mkString\n    }\n    def getData: Option[String] \u003d getDataFromUrl(remote) match {\n      case Success(list) \u003d\u003e Some(list.replaceAll(\"\\n\", \"\"))\n      case Failure(e)    \u003d\u003e { \n        println(s\"something went wrong while accessing $remote: $e\")\n        None\n        }\n    }\n    //running length\n    @tailrec\n    def compress[A](\n        list: List[A],\n        acc: List[(Int, A)] \u003d Nil\n    ): List[(Int, A)] \u003d list match {\n      case Nil \u003d\u003e acc\n      case x :: xs \u003d\u003e\n        acc match {\n          case (count, `x`) :: cs \u003d\u003e\n            compress(xs, List[(Int, A)]((count + 1, x)) ::: cs)\n          case acc \u003d\u003e compress(xs, List[(Int, A)]((1, x)) ::: acc)\n        }\n    }\n\n    //running sum\n    def buildLookupIndex[A](\n        xs: List[(Int, A)]\n    ): lookupTable[A] \u003d\n      xs.map(x \u003d\u003e x._1)\n        .scanLeft(0)(_ + _)\n        .tail\n        .zip(xs)\n\n    def retrieve[A](xs: lookupTable[A], i: Int): A \u003d ???\n\n  }\n\n"
+    }
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:373)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:424)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3280)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.didOpen(MetalsLanguageServer.scala:599)
+	... 16 more
+
+Jan 13, 2020 4:59:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.nio.file.NoSuchFileException: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala
+java.util.concurrent.CompletionException: java.nio.file.NoSuchFileException: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2159)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:38)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: java.nio.file.NoSuchFileException: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:373)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:424)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3280)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionAbsolutePathMetals.toInput(MtagsEnrichments.scala:112)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.toInputFromBuffers(MetalsEnrichments.scala:283)
+	at scala.meta.internal.metals.Trees.$anonfun$parse$1(Trees.scala:47)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.Trees.parse(Trees.scala:46)
+	at scala.meta.internal.metals.Trees.$anonfun$get$1(Trees.scala:22)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.Trees.get(Trees.scala:22)
+	at scala.meta.internal.metals.FoldingRangeProvider.getRangedFor(FoldingRangeProvider.scala:19)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$1(MetalsLanguageServer.scala:1005)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:24)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/globals.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/data.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/globals.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
+WARN  no build target: /Users/gog/playground/workdocs/21re/scala-finchMicroService/src/main/scala/challenge/21refinch/Main.scala
