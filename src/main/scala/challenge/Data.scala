@@ -1,6 +1,6 @@
 package challenge.finch
 
-case class Data(remote: String) { 
+case class Data(remote: String) {
 
   object Util {
     import scala.util.{Try, Success, Failure}
@@ -9,19 +9,20 @@ case class Data(remote: String) {
 
     type lookupTable[A] = List[(Int, (Int, A))]
 
-    def data: Option[String] = Try { scala.io.Source.fromURL(remote).mkString } match {
-      case Success(list) => Some(list.replaceAll("\n", ""))
-      case Failure(e)    => {
-        println(s"something went wrong while accessing $remote: $e")
-        None
+    def data: Option[String] =
+      Try { scala.io.Source.fromURL(remote).mkString } match {
+        case Success(list) => Some(list.replaceAll("\n", ""))
+        case Failure(e) => {
+          println(s"something went wrong while accessing $remote: $e")
+          None
+        }
       }
-    }
 
     //running length
     @tailrec
     def compress[A](
-      list: List[A],
-      acc: List[(Int, A)] = Nil
+        list: List[A],
+        acc: List[(Int, A)] = Nil
     ): List[(Int, A)] = list match {
       case Nil => acc
       case x :: xs =>
@@ -34,18 +35,18 @@ case class Data(remote: String) {
 
     //running sum
     def buildLookupIndex[A](
-      xs: List[(Int, A)]
+        xs: List[(Int, A)]
     ): lookupTable[A] =
       xs.map(x => x._1)
         .scanLeft(0)(_ + _)
         .tail
         .zip(xs)
 
-        def retrieve[A](xs: lookupTable[A], i: Int): A = {
-          xs.dropWhile(x => x._1 < i)
-            .head
-            ._2 // (count, char)
-            ._2 // (char)
-        }
+    def retrieve[A](xs: lookupTable[A], i: Int): A = {
+      xs.dropWhile(x => x._1 < i)
+        .head
+        ._2 // (count, char)
+        ._2 // (char)
+    }
   }
 }

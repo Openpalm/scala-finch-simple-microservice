@@ -13,12 +13,14 @@ import io.circe.generic.auto._
 
 import Globals._
 import org.slf4j.LoggerFactory
-import ch.qos.logback.classic.{Level,Logger}
+import ch.qos.logback.classic.{Level, Logger}
 
 object Main extends App {
 
-  LoggerFactory.getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME).
-     asInstanceOf[Logger].setLevel(Level.INFO)
+  LoggerFactory
+    .getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME)
+    .asInstanceOf[Logger]
+    .setLevel(Level.INFO)
   val logger = LoggerFactory.getLogger("ENDPOINT")
   // the API
   case class Message(i: Int)
@@ -54,6 +56,5 @@ object Main extends App {
   logger.info(s"refresh every $rate seconds")
 
   Await.ready(Http.server.serve(s":$port", service))
-
 
 }

@@ -9,7 +9,7 @@ lazy val root = (project in file("."))
     version := "0.0.1-SNAPSHOT",
     scalaVersion := "2.12.7",
     libraryDependencies ++= Seq(
-     "ch.qos.logback" % "logback-classic" % "1.1.3",
+      "ch.qos.logback" % "logback-classic" % "1.1.3",
       //the server
       "com.github.finagle" %% "finchx-core" % finchVersion,
       "com.github.finagle" %% "finchx-circe" % finchVersion,
