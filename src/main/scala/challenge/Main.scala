@@ -17,9 +17,8 @@ import ch.qos.logback.classic.{Level,Logger}
 
 object Main extends App {
 
- LoggerFactory.getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME).
+  LoggerFactory.getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME).
      asInstanceOf[Logger].setLevel(Level.INFO)
-
   val logger = LoggerFactory.getLogger("ENDPOINT")
   // the API
   case class Message(i: Int)
