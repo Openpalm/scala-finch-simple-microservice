@@ -1,6 +1,6 @@
 package challenge.finch
 
-object util {
+object Data {
 
   import scala.util.{Try, Success, Failure}
   import scala.annotation.tailrec

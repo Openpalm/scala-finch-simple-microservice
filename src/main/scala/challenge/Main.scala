@@ -11,11 +11,16 @@ import io.finch.catsEffect._
 import io.finch.circe._
 import io.circe.generic.auto._
 
-import globals._
+import Globals._
+import org.slf4j.LoggerFactory
+import ch.qos.logback.classic.{Level,Logger}
 
 object Main extends App {
 
-  
+ LoggerFactory.getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME).
+     asInstanceOf[Logger].setLevel(Level.INFO)
+
+  val logger = LoggerFactory.getLogger("ENDPOINT")
   // the API
   case class Message(i: Int)
 
@@ -27,7 +32,7 @@ object Main extends App {
   def getCharAtIndexRoute: Endpoint[IO, Message] =
     get(path[Int]) { i: Int =>
       FuturePool.unboundedPool {
-        println(s"received request for $i element")
+        logger.info(s"received request for $i element")
         //
         //logic
         //
@@ -44,11 +49,12 @@ object Main extends App {
       .serve[Application.Json](getCharAtIndexRoute)
       .toService
 
-  // server up 
+  // server up
+  logger.info(s"started at 0.0.0.0:$port")
+  logger.info(s"remote is $remote")
+  logger.info(s"refresh every $rate seconds")
+
   Await.ready(Http.server.serve(s":$port", service))
 
-  println(s"started at 0.0.0.0:$port")
-  println(s"remote is $remote")
-  println(s"refresh every $rate")
 
 }
