@@ -8,7 +8,7 @@ object Globals {
 
     def remote = Properties.envOrElse("APP.REMOTE", "http://localhost:8080")
     def port = Properties.envOrElse("APP.PORT", "1337")
-    def rate = Properties.envOrElse("APP.REFRESH", "3")
+    def rate = Properties.envOrElse("APP.REFRESH", "10")
 
     LoggerFactory
       .getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME)
