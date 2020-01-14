@@ -1,11 +1,11 @@
 package challenge.finch
 
+import scala.annotation.tailrec
 
 object Util {
 
   type LookupTable = List[(Int, (Int, Char))]
 
-  import scala.annotation.tailrec
   //running length
   @tailrec
   def compress_runningLength(

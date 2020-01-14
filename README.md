@@ -1,12 +1,15 @@
 # scala-finchMicroService
 
-docker import api.tar myapi:latest 
+## to run
 
-docker run --sig-proxy=false --net=host myapi:latest /coding-challenge
+sbt ~run
 
-./cli.sh
+## to test
 
-import challenge.finch.Main.util.\_
+curl http://0.0.0.0:1337:/1
 
-buildLookupIndex(compress(getData))
+
+
+
+
 

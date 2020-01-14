@@ -15,6 +15,7 @@ lazy val root = (project in file("."))
       "com.github.finagle" %% "finchx-circe" % finchVersion,
       "io.circe" %% "circe-generic" % circeVersion,
       //cache
+      "com.github.blemale" %% "scaffeine" % "3.1.0" % "compile",
       "com.github.cb372" %% "scalacache-caffeine" % "0.28.0",
       //
       //lihao console's
@@ -30,3 +31,7 @@ sourceGenerators in Test += Def.task {
   IO.write(file, """object amm extends App { ammonite.Main.main(args) }""")
   Seq(file)
 }.taskValue
+
+
+trapExit := false
+

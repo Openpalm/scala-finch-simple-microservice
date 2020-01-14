@@ -10,7 +10,9 @@ import Globals.logger
 import Util.LookupTable
 
 object Data  {
-  private def xs: LookupTable = fetch match { case Some(data) => data }
+
+  //TODO needs caching
+  def xs: LookupTable = fetch match { case Some(data) => data }
 
   def fetch: Option[LookupTable] =
     Try { 
@@ -18,8 +20,9 @@ object Data  {
       scala.io.Source.fromURL(remote).mkString 
       } match {
         case Success(list) => { 
-          val step1 = Util.compress_runningLength(list.replaceAll("\n", "").toList, Nil)
-          Some(Util.transform_runningSum(step1))
+          val compressed = Util.compress_runningLength(list.replaceAll("\n", "").toList, Nil)
+          val transform = Util.transform_runningSum(compressed)
+          Some(transform)
         }
         case Failure(e) => {
           logger.info(s"something went wrong $e")
@@ -27,10 +30,12 @@ object Data  {
         }
       }
 
-      def lookup(i: Int): Char = {
-        xs.dropWhile(x => x._1 < i)
-          .head
-          ._2 // (count, char)
-          ._2 // (char)
+      def lookup(i: Int): Try[Char] = {
+        Try { 
+          xs.dropWhile(x => x._1 < i)
+            .head
+            ._2 // (count, char)
+            ._2 // (char)
+        } 
       }
 }
