@@ -1,4 +1,4 @@
-# scala-finch micro serice
+# scala-finch micro service
 
 a microservice using finch + caffeine,
 
@@ -16,7 +16,7 @@ curl http://0.0.0.0:1337:/1
 
 soon.
 
+### requirements
 
-
-
-
+java 1.8
+sbt
