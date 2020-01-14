@@ -21,8 +21,8 @@ object Data  {
       } match {
         case Success(list) => { 
           val compressed = Util.compress_runningLength(list.replaceAll("\n", "").toList, Nil)
-          val transform = Util.transform_runningSum(compressed)
-          Some(transform)
+          val transformed = Util.transform_runningSum(compressed)
+          Some(transformed)
         }
         case Failure(e) => {
           logger.info(s"something went wrong $e")
