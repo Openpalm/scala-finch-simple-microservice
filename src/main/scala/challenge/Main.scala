@@ -16,10 +16,10 @@ import scala.util.{Success, Failure}
 
 object Main extends App {
 
-  // the API
+  // data type
   case class Result(char: Char)
 
-  // the routes
+  // routes
   def healthcheck: Endpoint[IO, String] = get(pathEmpty) {
     Ok("OK")
   }
@@ -30,7 +30,10 @@ object Main extends App {
         logger.info(s"received request for $i-th element")
         Data.lookup(i) match { 
           case Success(c) => Ok(Result(c))
-          case Failure(_) => NoContent
+          case Failure(_) =>  { 
+            logger.info(s"failed retrieving $i-th element")
+            NoContent
+          }
         } 
       }
   }.handle {

@@ -20,9 +20,10 @@ object Data  {
       scala.io.Source.fromURL(remote).mkString 
       } match {
         case Success(list) => { 
-          val compressed = Util.compress_runningLength(list.replaceAll("\n", "").toList, Nil)
-          val transformed = Util.transform_runningSum(compressed)
-          Some(transformed)
+          for { 
+          compressed <- Util.compress_runningLength(list.replaceAll("\n", "").toList, Nil)
+          transformed <- Util.transform_runningSum(compressed)
+          }  yield transformed
         }
         case Failure(e) => {
           logger.info(s"something went wrong $e")
