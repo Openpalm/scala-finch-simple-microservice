@@ -1,52 +1,36 @@
 package challenge.finch
 
-case class Data(remote: String) {
+import org.slf4j.LoggerFactory
+import ch.qos.logback.classic.{Level,Logger}
+import scala.util.{Try, Success, Failure}
+import scala.annotation.tailrec
 
-  object Util {
-    import scala.util.{Try, Success, Failure}
-    import scala.annotation.tailrec
-    import Globals.remote
+import Globals.remote
+import Globals.logger
+import Util.LookupTable
 
-    type lookupTable[A] = List[(Int, (Int, A))]
+object Data  {
+  private def xs: LookupTable = fetch match { case Some(data) => data }
 
-    def data: Option[String] =
-      Try { scala.io.Source.fromURL(remote).mkString } match {
-        case Success(list) => Some(list.replaceAll("\n", ""))
+  def fetch: Option[LookupTable] =
+    Try { 
+      logger.info(s"fetching from $remote")
+      scala.io.Source.fromURL(remote).mkString 
+      } match {
+        case Success(list) => { 
+          val step1 = Util.compress_runningLength(list.replaceAll("\n", "").toList, Nil)
+          Some(Util.transform_runningSum(step1))
+        }
         case Failure(e) => {
-          println(s"something went wrong while accessing $remote: $e")
+          logger.info(s"something went wrong $e")
           None
         }
       }
 
-    //running length
-    @tailrec
-    def compress[A](
-        list: List[A],
-        acc: List[(Int, A)] = Nil
-    ): List[(Int, A)] = list match {
-      case Nil => acc
-      case x :: xs =>
-        acc match {
-          case (count, `x`) :: cs =>
-            compress(xs, List[(Int, A)]((count + 1, x)) ::: cs)
-          case acc => compress(xs, List[(Int, A)]((1, x)) ::: acc)
-        }
-    }
-
-    //running sum
-    def buildLookupIndex[A](
-        xs: List[(Int, A)]
-    ): lookupTable[A] =
-      xs.map(x => x._1)
-        .scanLeft(0)(_ + _)
-        .tail
-        .zip(xs)
-
-    def retrieve[A](xs: lookupTable[A], i: Int): A = {
-      xs.dropWhile(x => x._1 < i)
-        .head
-        ._2 // (count, char)
-        ._2 // (char)
-    }
-  }
+      def lookup(i: Int): Char = {
+        xs.dropWhile(x => x._1 < i)
+          .head
+          ._2 // (count, char)
+          ._2 // (char)
+      }
 }

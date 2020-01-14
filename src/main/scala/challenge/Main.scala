@@ -12,32 +12,23 @@ import io.finch.circe._
 import io.circe.generic.auto._
 
 import Globals._
-import org.slf4j.LoggerFactory
-import ch.qos.logback.classic.{Level, Logger}
+
 
 object Main extends App {
 
-  LoggerFactory
-    .getLogger(org.slf4j.Logger.ROOT_LOGGER_NAME)
-    .asInstanceOf[Logger]
-    .setLevel(Level.INFO)
-  val logger = LoggerFactory.getLogger("ENDPOINT")
   // the API
-  case class Message(i: Int)
+  case class Result(char: Char)
 
   // the routes
   def healthcheck: Endpoint[IO, String] = get(pathEmpty) {
     Ok("OK")
   }
 
-  def getCharAtIndexRoute: Endpoint[IO, Message] =
+  def getCharAtIndexRoute: Endpoint[IO, Result] =
     get(path[Int]) { i: Int =>
       FuturePool.unboundedPool {
-        logger.info(s"received request for $i element")
-        //
-        //logic
-        //
-        Ok(Message(i))
+        logger.info(s"received request for $i-th element")
+        Ok(Result(Data.lookup(i)))
       }
     }.handle {
       case e: Error.NotPresent => BadRequest(e)
