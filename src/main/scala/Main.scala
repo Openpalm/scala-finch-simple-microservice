@@ -27,11 +27,11 @@ object Main extends App {
   def getCharAtIndexRoute: Endpoint[IO, Result] =
     get(path[Int]) { i: Int =>
       FuturePool.unboundedPool {
-        logger.info(s"received request for $i-th element")
+        logger.debug(s"received request for $i-th element")
         Data.lookup(i) match {
           case Success(c) => Ok(Result(c))
           case Failure(_) => {
-            logger.info(s"failed retrieving $i-th element")
+            logger.debug(s"failed retrieving $i-th element")
             NoContent
           }
         }

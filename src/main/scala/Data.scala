@@ -12,6 +12,7 @@ import Util.LookupTable
 
 import com.github.blemale.scaffeine.{Cache, Scaffeine}
 import scala.concurrent.duration._
+
 object Data {
 
   val cache: Cache[String, LookupTable] =
@@ -23,7 +24,7 @@ object Data {
 
   def xs: LookupTable = cache.asMap.get(remote) match {
     case Some(data) => {
-      logger.info(s"retrieved cached list")
+      logger.debug(s"retrieved cached list")
       data
     }
     case None =>
@@ -51,7 +52,7 @@ object Data {
         } yield transformed
       }
       case Failure(e) => {
-        logger.info(s"something went wrong $e")
+        logger.error(s"something went wrong $e")
         None
       }
     }

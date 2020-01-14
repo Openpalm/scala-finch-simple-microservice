@@ -1,4 +1,7 @@
-# scala-finchMicroService
+# scala-finch micro serice
+
+finch + caffeine,
+config via src/main/scala/Globals.scala
 
 ## to run
 
