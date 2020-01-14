@@ -32,6 +32,4 @@ sourceGenerators in Test += Def.task {
   Seq(file)
 }.taskValue
 
-
 trapExit := false
-

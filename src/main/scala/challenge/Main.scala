@@ -28,17 +28,17 @@ object Main extends App {
     get(path[Int]) { i: Int =>
       FuturePool.unboundedPool {
         logger.info(s"received request for $i-th element")
-        Data.lookup(i) match { 
+        Data.lookup(i) match {
           case Success(c) => Ok(Result(c))
-          case Failure(_) =>  { 
+          case Failure(_) => {
             logger.info(s"failed retrieving $i-th element")
             NoContent
           }
-        } 
+        }
       }
-  }.handle {
-    case e: Error.NotPresent => BadRequest(e)
-  }
+    }.handle {
+      case e: Error.NotPresent => BadRequest(e)
+    }
 
   // service bootstrap
   def service: Service[Request, Response] =
@@ -47,11 +47,11 @@ object Main extends App {
       .serve[Application.Json](getCharAtIndexRoute)
       .toService
 
-      // server up
-      logger.info(s"started at 0.0.0.0:$port")
-      logger.info(s"remote is $remote")
-      logger.info(s"refresh every $rate seconds")
+  // server up
+  logger.info(s"started at 0.0.0.0:$port")
+  logger.info(s"remote is $remote")
+  logger.info(s"refresh every $rate seconds")
 
-      Await.ready(Http.server.serve(s":$port", service))
+  Await.ready(Http.server.serve(s":$port", service))
 
 }
