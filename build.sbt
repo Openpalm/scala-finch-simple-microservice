@@ -1,3 +1,6 @@
+enablePlugins(JavaAppPackaging)
+enablePlugins(DockerPlugin)
+
 val finchVersion = "0.26.0"
 val circeVersion = "0.10.1"
 val scalatestVersion = "3.0.5"
@@ -5,8 +8,8 @@ val scalatestVersion = "3.0.5"
 lazy val root = (project in file("."))
   .settings(
     organization := "challenge",
-    name := "21re-finch",
-    version := "0.0.1-SNAPSHOT",
+    name := "theapi",
+    version := "SNAPSHOT",
     scalaVersion := "2.12.7",
     libraryDependencies ++= Seq(
       "ch.qos.logback" % "logback-classic" % "1.1.3",
@@ -33,3 +36,5 @@ sourceGenerators in Test += Def.task {
 }.taskValue
 
 trapExit := false
+
+mainClass in Compile := Some("challenge.finch.Main")

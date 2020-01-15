@@ -12,7 +12,7 @@ import io.finch.circe._
 import io.circe.generic.auto._
 
 import Globals._
-import scala.util.{Success, Failure}
+import scala.util.{Try, Success, Failure}
 
 object Main extends App {
 
@@ -29,16 +29,19 @@ object Main extends App {
       FuturePool.unboundedPool {
         logger.debug(s"received request for $i-th element")
         Data.lookup(i) match {
-          case Success(c) => Ok(Result(c))
+          case Success(c) =>  { 
+            logger.debug(s"retrieved $c")
+            Ok(Result(c)) 
+          }
           case Failure(_) => {
             logger.debug(s"failed retrieving $i-th element")
             NoContent
           }
         }
       }
-    }.handle {
-      case e: Error.NotPresent => BadRequest(e)
-    }
+  }.handle {
+    case e: Error.NotPresent => BadRequest(e)
+  }
 
   // service bootstrap
   def service: Service[Request, Response] =
@@ -47,11 +50,6 @@ object Main extends App {
       .serve[Application.Json](getCharAtIndexRoute)
       .toService
 
-  // server up
-  logger.info(s"started at 0.0.0.0:$port")
-  logger.info(s"remote is $remote")
-  logger.info(s"refresh every $rate seconds")
-
-  Await.ready(Http.server.serve(s":$port", service))
-
+      // server up
+        Await.ready(Http.server.serve(s"0.0.0.0:$port", service)) 
 }
