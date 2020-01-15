@@ -11,6 +11,3 @@ services:
       - APP_REMOTE=http://endpoint1:80
     ports:
       - "1337:1337"
-        #networks:
-        #    default:
-        #          driver: bridge
