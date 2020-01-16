@@ -28,7 +28,7 @@ or
 ##### method 2
 
  - build a local docker image using ./makeDocker.sh
- - replace <YOUR IMAGE HERE> line with your image, and execute 'docker-compose up'
+ - replace /YOUR IMAGE HERE/ line with your image, and execute 'docker-compose up'
  - curl http://0.0.0.0:1337/50 or use ./curlLoop.sh <# of requests>
 
  
