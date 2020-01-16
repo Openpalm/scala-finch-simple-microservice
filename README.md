@@ -19,7 +19,7 @@ config via
 
 ##### method 1
 
- - make sure the test API uis running on http://0.0.0.0:8080
+ - make sure the test API is running on http://0.0.0.0:8080
  - sbt run
  - curl http://0.0.0.0:1337/50
 
@@ -28,7 +28,9 @@ or
 ##### method 2
 
  - build a local docker image using ./makeDocker.sh
- - docker-compose up
- - curl http://0.0.0.0:1337/50
+ - replace <YOUR IMAGE HERE> line with your image, and execute 'docker-compose up'
+ - curl http://0.0.0.0:1337/50 or use ./curlLoop <# of requests>
+
+ 
 
 

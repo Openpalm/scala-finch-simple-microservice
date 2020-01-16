@@ -2,7 +2,7 @@ version: "3"
 
 services:
   endpoint1:
-    image: 21re/coding-challenge:latest
+    image: <YOUR IMAGE HERE>
     ports:
       - "8080:80"
   endpoint2:
