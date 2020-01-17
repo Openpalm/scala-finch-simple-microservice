@@ -5,16 +5,18 @@ import ch.qos.logback.classic.{Level, Logger}
 import scala.util.{Try, Success, Failure}
 import scala.annotation.tailrec
 
-import Globals.remote
-import Globals.logger
-import Globals.rate
-import Util.LookupTable
+import Globals._
 
 import com.github.blemale.scaffeine.{Cache, Scaffeine}
 import scala.concurrent.duration._
 
-object Data {
+ trait types {
+    type LookupTable = List[(Int, Char)]
+  }
 
+object Data extends DataUtil with types {
+
+ 
   val cache: Cache[String, LookupTable] =
     Scaffeine()
       .recordStats()
@@ -44,11 +46,11 @@ object Data {
     } match {
       case Success(list) => {
         for {
-          compressed <- Util.compress_runningLength(
+          compressed <- compress_runningLength(
             list.replaceAll("\n", "").toList,
             Nil
           )
-          transformed <- Util.transform_runningSum(compressed)
+          transformed <- transform_runningSum(compressed)
         } yield transformed
       }
       case Failure(e) => {
@@ -61,8 +63,7 @@ object Data {
     Try {
       xs.dropWhile(x => x._1 < i)
         .head
-        ._2 // (count, char)
-        ._2 // (char)
+        ._2
     }
   }
 }

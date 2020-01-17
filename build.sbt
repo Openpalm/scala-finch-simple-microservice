@@ -16,7 +16,13 @@ lazy val root = (project in file("."))
       "com.github.finagle" %% "finchx-core" % finchVersion,
       "com.github.finagle" %% "finchx-circe" % finchVersion,
       "io.circe" %% "circe-generic" % circeVersion,
+      //
       "com.github.blemale" %% "scaffeine" % "3.1.0" % "compile",
+      //
+      "io.kcache" % "kcache" % "3.0.1",
+      "com.softwaremill.kmq" %% "core" % "0.2.2",
+      "com.lightbend" %% "kafka-streams-scala" % "0.2.1",
+      //
       "com.lihaoyi" % "ammonite" % "1.6.9-19-827dffe" % "test" cross CrossVersion.full,
       "org.scalatest" %% "scalatest" % scalatestVersion % "test"
     )

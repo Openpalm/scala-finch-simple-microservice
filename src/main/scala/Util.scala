@@ -4,13 +4,11 @@ import scala.annotation.tailrec
 import scala.util.{Try, Success, Failure}
 import Globals.logger
 
-object Util {
-
-  type LookupTable = List[(Int, (Int, Char))]
+trait DataUtil extends types {
 
   //running length
   @tailrec
-  def compress_runningLength(
+  final def compress_runningLength(
       list: List[Char],
       acc: List[(Int, Char)] = Nil
   ): Option[List[(Int, Char)]] = list match {
@@ -34,7 +32,7 @@ object Util {
         .tail
         .zip(xs)
     } match {
-      case Success(list) => Some(list)
+      case Success(list) => Some(list.map(x=> x._1 -> x._2._2))
       case Failure(e) => {
         logger.info(s"transform error: $e")
         None
