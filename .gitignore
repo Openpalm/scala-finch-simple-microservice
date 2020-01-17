@@ -1,5 +1,6 @@
 target
 */target
 
+composeFiles/zk-single-kafka-single/*
 .metals
 tags
